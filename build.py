@@ -12,6 +12,7 @@ if os.path.isdir("build"):
 
 os.system("mkdir build")
 os.system("cp -r _static build/_static")
+os.system("cp -r test.html build/")
 
 slides = []
 i = 0
