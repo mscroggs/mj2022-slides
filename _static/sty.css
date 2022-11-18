@@ -1,3 +1,30 @@
+/* fonts */
+@font-face {
+    font-family: 'comfortaaregular';
+    src: url('_static/comfortaa-regular-webfont.woff2') format('woff2'),
+         url('_static/comfortaa-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('_static/raleway-semibold-webfont.woff2') format('woff2'),
+         url('_static/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'chalkdust_icon_fontregular';
+    src: url('_static/chalkdust_icon_font-webfont.woff2') format('woff2'),
+         url('_static/chalkdust_icon_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* general */
 
 html{height: 100%;}
@@ -11,7 +38,7 @@ height: 100%;
 .blockright {text-align:right}
 .blockcentre {text-align:center}
 
-.icon {font-family:"Chalkdust icon font"; font-weight:normal;color:#DDDDDD;padding-right:2vh}
+.icon {font-family:chalkdust_icon_fontregular; font-weight:normal;color:#DDDDDD;padding-right:2vh}
 .icon.twitter {color:#1D9BF0}
 .icon.mastodon {color:#2B90D9}
 
@@ -20,10 +47,10 @@ img.full-slide {position:absolute;height:99vh;top:1vh;left:50vw;transform:transl
 
 /* title */
 body.title {background-color:#000000; color:#FFFFFF}
-body.title .title {text-align:center;font-size:15vh;font-family:Raleway;font-weight:600;position:absolute;top:10vh;left:10vw;right:10vw}
-body.title .author {font-size:5vh;font-family:Raleway;font-weight:600;position:absolute;top:50vh;left:35vw;right:35vw;text-align:center}
+body.title .title {text-align:center;font-size:15vh;font-family:ralewaysemibold;position:absolute;top:10vh;left:10vw;right:10vw}
+body.title .author {font-size:5vh;font-family:ralewaysemibold;position:absolute;top:50vh;left:35vw;right:35vw;text-align:center}
 
 /* final */
 body.final {background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 50%, #000000 50%, #000000 100%);color:#FFFFFF}
-body.final .title {text-align:center;font-size:10vh;font-family:Raleway;font-weight:600;position:absolute;top:55vh;left:10vw;right:10vw}
-body.final .author {font-size:5vh;font-family:Raleway;font-weight:600;position:absolute;top:70vh;left:35vw;right:35vw;text-align:center}
+body.final .title {text-align:center;font-size:10vh;font-family:ralewaysemibold;position:absolute;top:55vh;left:10vw;right:10vw}
+body.final .author {font-size:5vh;font-family:ralewaysemibold;position:absolute;top:70vh;left:35vw;right:35vw;text-align:center}

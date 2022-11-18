@@ -12,12 +12,12 @@ document.addEventListener('keydown', function(event){
 });
 
 function process_key(keyName){
-    if(keyName == "ArrowRight" && cSlide + 1 < slides.length){
+    if((keyName == "ArrowRight" || keyName == "PageDown") && cSlide + 1 < slides.length){
         cSlide++
         document.body.innerHTML = slides[cSlide][0]
         document.body.className = slides[cSlide][1]["style"]
     }
-    if(keyName == "ArrowLeft" && cSlide > 0){
+    if((keyName == "ArrowLeft" || keyName == "PageUp") && cSlide > 0){
         cSlide--
         document.body.innerHTML = slides[cSlide][0]
         document.body.className = slides[cSlide][1]["style"]
