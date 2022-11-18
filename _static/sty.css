@@ -27,7 +27,7 @@
 
 /* general */
 
-html{height: 100%;}
+html{height: 100%;font-size:3vh;font-family:ralewaysemibold}
 body {margin:0;padding:0;
 height: 100%;
     margin: 0;
@@ -43,14 +43,23 @@ height: 100%;
 .icon.mastodon {color:#6364FF}
 
 img.top-half {position:absolute;height:48vh;top:1vh;left:50vw;transform:translate(-50%,0);}
-img.full-slide {position:absolute;height:99vh;top:1vh;left:50vw;transform:translate(-50%,0);}
+img.full-slide {position:absolute;height:98vh;top:1vh;left:50vw;transform:translate(-50%,0);}
+img.full-slide-wide {position:absolute;width:98vw;left:1vw;top:50vh;transform:translate(0,-50%);}
+img.full-slide.below-title {height:90vh;top:10vh}
+img.left-half {position:absolute;width:48vw;left:1vw;top:50vh;transform:translate(0,-50%);}
+img.right-half {position:absolute;width:48vw;right:1vw;top:50vh;transform:translate(0,-50%);}
+
+.slide {position:absolute;top:0;bottom:0;left:0;right:0}
+
+/* default (a slide) */
+.default.slide .title {text-align:center;font-size:10vh;font-family:ralewaysemibold;position:absolute;top:3vh;left:10vw;right:10vw;z-index:5}
 
 /* title */
-body.title {background-color:#000000; color:#FFFFFF}
-body.title .title {text-align:center;font-size:15vh;font-family:ralewaysemibold;position:absolute;top:10vh;left:10vw;right:10vw}
-body.title .author {font-size:5vh;font-family:ralewaysemibold;position:absolute;top:50vh;left:35vw;right:35vw;text-align:center}
+.title.slide {background-color:#000000; color:#FFFFFF}
+.title.slide .title {text-align:center;font-size:15vh;font-family:ralewaysemibold;position:absolute;top:10vh;left:10vw;right:10vw}
+.title.slide .author {font-size:5vh;font-family:ralewaysemibold;position:absolute;top:50vh;left:35vw;right:35vw;text-align:center}
 
 /* final */
-body.final {background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 50%, #000000 50%, #000000 100%);color:#FFFFFF}
-body.final .title {text-align:center;font-size:10vh;font-family:ralewaysemibold;position:absolute;top:55vh;left:10vw;right:10vw}
-body.final .author {font-size:5vh;font-family:ralewaysemibold;position:absolute;top:70vh;left:35vw;right:35vw;text-align:center}
+.final.slide {background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 50%, #000000 50%, #000000 100%);color:#FFFFFF}
+.final.slide .title {text-align:center;font-size:10vh;font-family:ralewaysemibold;position:absolute;top:55vh;left:10vw;right:10vw}
+.final.slide .author {font-size:5vh;font-family:ralewaysemibold;position:absolute;top:70vh;left:35vw;right:35vw;text-align:center}

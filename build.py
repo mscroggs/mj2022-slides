@@ -35,11 +35,22 @@ while os.path.isfile(f"slides/{i}.html"):
 with open("_template.html") as f:
     t = f.read()
 
+slide_divs = ""
+for i, (slide, options) in enumerate(slides):
+    slide_divs += f"<div class='slide {options['style']}' id='slide{i}' style='display:"
+    if i == 0:
+        slide_divs += "block"
+    else:
+        slide_divs += "none"
+    slide_divs += "'>"
+    slide_divs += slide
+    slide_divs += "</div>"
+
 with open("_template.js") as f:
     js = f.read()
-js = js.replace("{slides}", json.dumps(slides))
+js = js.replace("{nslides}", f"{len(slides)}")
 
-t = t.replace("{slide}", slides[0][0])
+t = t.replace("{slide}", slide_divs)
 t = t.replace("{js}", js)
 
 with open("build/index.html", "w") as f:
